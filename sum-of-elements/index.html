@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let userNumber = null;
+    let sum = 0;
+    do {
+      userNumber = +prompt("Введите число"); //  Задаем пользователю вопрос и сохраняем ответ в переменную userNumber
+      // null, 113, fgfg454 => NaN
+      if(!Number.isNaN(userNumber)) {
+        sum += userNumber;
+      }
+      else {
+        alert("Вы ввели не число. Попробуйте еще раз")
+      }
+    }
+    while(userNumber || Number.isNaN(userNumber));
+
+    alert(sum);
+  </script>
+</body>
+</html>

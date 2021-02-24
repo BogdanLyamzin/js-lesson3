@@ -16,17 +16,11 @@
 
         let result = false;
         for (let i = 0; i < users.length; i++) {
+            console.log(i)
             if (users[i] === user) {
                 result = true;
                 break;
             }
-            console.log(i)
-            /*
-            users[0]
-            users[1]
-            users[2]
-            users[3]
-            */
         }
         if (result) {
             console.log(`Сейчас ${user} выйдет`);

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    1. Спросить у пользователя число.
+    2. Создать переменную для хранения итоговой суммы (объявить ее через let)
+    3. проверить что человек ввел не null.
+    4. Прибавить значение, которое ввел пользователь, к переменной, в которой
+    храниться итоговая сумма.
+    5. Вывести переменную на экран. 
+    */
+    let userNumber = +prompt("Введите число");
+    let sum = 0;
+    while(userNumber) {
+      sum += userNumber;
+      userNumber = +prompt("Введите число");
+    }
+
+    alert(sum);
+  </script>
+</body>
+</html>
